@@ -1,0 +1,30 @@
+// find the greatest number stored in an array of size 10.take array values from user//
+#include<stdio.h>
+int main()
+{
+   int a[10];
+   int i,j,temp;
+   int max=0;
+      printf("\n enter 10 numbers\n");
+      for(i=0;i<=9;i++)
+      {
+       scanf("%d",&a[i]);
+      }
+      for(i=0;i<=9;i++)
+      {
+          for(j=i+1;j<=9;j++)
+          {
+              if(a[i]>a[j])
+              {
+                  temp=a[i];
+                  a[i]=a[j];
+                  a[j]=temp;
+              }
+          }
+      }
+
+      {
+          printf("second largest number in an array is %d\n",a[8]);      }
+      return 0;
+}
+

@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+     int a[100],i,n,largest,s_largest;
+      printf("enter the size");
+       scanf("%d",&n);
+
+         printf("\nenter the elements");
+           for(i=0;i<n;i++)
+           {
+            scanf("%d",&a[i]);
+
+        }
+largest=-999;
+s_largest=-999;
+
+            for(i=0;i<n;i++)
+           {
+               if(a[i]>largest);
+                {
+                 s_largest=largest;
+                }
+
+                 else if(a[i]>s_largest && a[i]<largest)
+                {
+                 s_largest=a[i];
+
+                }
+            }
+
+printf("\nfirst largest =%d",largest);
+printf("\nsecond largest =%d",s_largest);
+
+return 0;
+
+
+
+
+}
