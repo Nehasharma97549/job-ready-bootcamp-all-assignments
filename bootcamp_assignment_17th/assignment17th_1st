@@ -1,0 +1,15 @@
+/*WAP to calculate the length of the string.(without using built-in method)*/
+
+#include<stdio.h>
+int main()
+{
+char a[]="nehaa";
+int i=0;count=0;
+while(a[i]!='\0')
+{i++;
+count++;
+}
+
+printf("%d",count);
+return 0;
+}
