@@ -1,0 +1,53 @@
+//-4 to rorate an array by n position in d direction for examle 32,29,40,12,70, make it 40,12,70,32,29 (array and function)//
+
+
+#include<stdio.h>
+void rotatearray(int arr[],int arrsize,int n,int d)
+{
+    int brr[arrsize];
+   for(int i=0;i<arrsize;i++)
+       brr[i]=arr[i];
+       if(d==0)//for left
+   {
+         for(int i=0,j=n;i<arrsize;i++)
+            arr[i]=brr[j++ % arrsize];
+    }
+        else//for right
+          {
+              for(int i=0,j=arrsize-n;i<arrsize;i++)
+               arr[i]=brr[j++ % arrsize];
+
+           }
+        }
+
+
+int main()
+{
+  int arrsize,n,d;
+  printf("enter array size:");
+  scanf("%d",&arrsize);
+
+  int arr[size];
+
+  printf("enter %d element in array:\n",arrsize);
+  for(int i=0;i<arrsize;i++)
+        scanf("%d",&arr[i]);
+
+
+ printf("enter position and direction(if direction is left then enter 0 and for right enter 1:")
+  scanf("%d%d",&n,&d);
+
+  s
+
+  printf("\nabefore rotate array: ");
+  for(int i=0;i<arrsize;i++)
+        printf("%d ",arr[i]);
+
+        rotatearray(arr,arrsize,n,d);
+
+        printf("\nafter rotate array by %d position:");
+        for(int i=0;i<arrsize;i++)
+             printf("%d",arr[i]);
+     return 0;
+
+}
